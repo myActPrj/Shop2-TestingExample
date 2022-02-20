@@ -10,10 +10,14 @@ namespace Shop.Utils
     {
         public static long Factorial(int num)
         {
-            int n = 1;
-            if (num == 1) return 1;
+            // не рабочий пример
+            //int n = 1;
+            //if (num == 1) return 1;
+            //return n * Factorial(num - 1);
 
-            return n * Factorial(num - 1);
+            // рабочий пример
+            if (num == 0) return 1;
+            return num * Factorial(num - 1);
         }
     }
 }
